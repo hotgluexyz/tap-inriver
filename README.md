@@ -44,10 +44,6 @@ tap-inriver --config config.json --catalog catalog.json > out.singer
 
 Point `config.json` at your credentials; keep secrets out of version control.
 
-## API examples (curl)
-
-See **[docs/curl-roller-skates.md](docs/curl-roller-skates.md)** for REST examples aligned with **`inriver-swagger.json`**: create Product / Item / Size, then `ProductItem` and `ItemSize` links (e.g. “Roller Skates” with colors and sizes). Plain copy-paste list: **[docs/curl-roller-skates.txt](docs/curl-roller-skates.txt)**.
-
 ## License
 
 Apache-2.0
