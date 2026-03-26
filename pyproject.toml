@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tap-inriver"
+version = "0.1.0"
+description = "Singer tap for inRiver PIM REST API (Hotglue Singer SDK)."
+authors = ["hotglue"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+requests = "^2.25.1"
+hotglue-singer-sdk = "^1.0.10"
+backoff = "^1.8.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tap-inriver = "tap_inriver.tap:TapInRiver.cli"
